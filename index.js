@@ -10,7 +10,7 @@ let commands = {
     },
     SET_COMPASS_RADIUS_BY_NUMBER: NUMBER => {
         try {
-            COMPASS_RADIUS = int(NUMBER)
+            COMPASS_RADIUS = float(NUMBER)*width;
         } catch {
             return true;
         }
